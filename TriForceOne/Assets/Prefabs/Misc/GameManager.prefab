@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114000010368844082}
   - component: {fileID: 114000012625965340}
   - component: {fileID: 114000013104955188}
+  - component: {fileID: 114870888957992094}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -217,6 +218,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 515
+  bulletTowerAvailable: 1
+  magnetTowerAvailable: 1
+  lazerTowerAvailable: 1
+  missileTowerAvailable: 1
 --- !u!114 &114000013104955188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,3 +244,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a092bc51cf9442b468d957f76c898302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114870888957992094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012604538664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50bf3d04ad51fc4d8d6eb5bbc8b809b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletTowerButton: {fileID: 0}
+  magnetTowerButton: {fileID: 0}
+  lazerTowerButton: {fileID: 0}
+  missileTowerButton: {fileID: 0}

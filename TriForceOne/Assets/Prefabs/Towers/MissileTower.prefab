@@ -1013,7 +1013,7 @@ MonoBehaviour:
   maxAmmo: 2
   maxMags: 15
   mags: 0
-  damage: 20
+  damage: 40
   canFire: 1
   shot: {fileID: 1000013848371552, guid: 445bdc5a322a3a84d973ff8ca0053e12, type: 2}
   targetFirst: 0

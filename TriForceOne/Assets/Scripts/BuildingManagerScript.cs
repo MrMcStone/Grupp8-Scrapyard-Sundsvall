@@ -28,8 +28,13 @@ public class BuildingManagerScript : MonoBehaviour
 	Ray ray;
 	NavMeshPath path;
 
-	// Use this for initialization
-	void Start()
+    public bool bulletTowerAvailable;
+    public bool magnetTowerAvailable;
+    public bool lazerTowerAvailable;
+    public bool missileTowerAvailable;
+
+    // Use this for initialization
+    void Start()
 	{
 		//Ger variables dess värde, skapar rätt referenser
 		path = new UnityEngine.AI.NavMeshPath();
@@ -102,22 +107,22 @@ public class BuildingManagerScript : MonoBehaviour
 
 		if (lastClickedFoundation)
 		{
-			if (clickedFoundationScript.HasScrap && !clickedFoundationScript.HasTower && Input.GetKeyDown(KeyCode.T))
+			if (bulletTowerAvailable && clickedFoundationScript.HasScrap && !clickedFoundationScript.HasTower && Input.GetKeyDown(KeyCode.T))
 			{
 				BuildTower(bulletTower);
 			}
 
-			else if (clickedFoundationScript.HasScrap && !clickedFoundationScript.HasTower && Input.GetKeyDown(KeyCode.M))
+			else if (magnetTowerAvailable && clickedFoundationScript.HasScrap && !clickedFoundationScript.HasTower && Input.GetKeyDown(KeyCode.M))
 			{
 				BuildTower(magnetTower);
 			}
 
-			else if (clickedFoundationScript.HasScrap && !clickedFoundationScript.HasTower && Input.GetKeyDown(KeyCode.L))
+			else if (lazerTowerAvailable && clickedFoundationScript.HasScrap && !clickedFoundationScript.HasTower && Input.GetKeyDown(KeyCode.L))
 			{
 				BuildTower(lazerTower);
 			}
 
-			else if (clickedFoundationScript.HasScrap && !clickedFoundationScript.HasTower && Input.GetKeyDown(KeyCode.B))
+			else if (missileTowerAvailable && clickedFoundationScript.HasScrap && !clickedFoundationScript.HasTower && Input.GetKeyDown(KeyCode.B))
 			{
 				BuildTower(missileTower);
 			}

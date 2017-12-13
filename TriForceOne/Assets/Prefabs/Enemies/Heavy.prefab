@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8460859618cdf564b97ea11ab810905e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1500
+  health: 750
   score: 666
   scrapValue: 666
   scrapTimer: 1
