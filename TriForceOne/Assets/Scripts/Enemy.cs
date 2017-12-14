@@ -28,16 +28,9 @@ public class Enemy : MonoBehaviour
 	void Start()
 	{
 		NavMeshAgent navMeshAgent = GetComponent<NavMeshAgent>();
-		if (navMeshAgent.enabled && !navMeshAgent.isOnNavMesh)
-		{
-			Vector3 position = transform.position;
-			NavMeshHit hit;
-			NavMesh.SamplePosition(position, out hit, 10.0f,  NavMesh.AllAreas);
-			position = hit.position; // usually this barely changes, if at all
-			navMeshAgent.Warp(position);
-		}
-
-		enemyManager = GameObject.Find("GameManager").GetComponent<EnemyManager>();
+		
+        navMeshAgent.Warp(transform.position); 
+        enemyManager = GameObject.Find("GameManager").GetComponent<EnemyManager>();
 		sound = GetComponent<AudioSource>();
 		anim = GetComponent<Animator>();
 		magnets = 0;
