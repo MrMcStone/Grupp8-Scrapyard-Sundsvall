@@ -76,6 +76,7 @@ public class FoundationScript : MonoBehaviour
 	public void AttachTrap(GameObject trap)
 	{
 		hasTrap = true;
+        valid = false;
 		this.trap = Instantiate(trap, transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity, transform) as GameObject;
 	}
 

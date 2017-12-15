@@ -9,8 +9,8 @@ public class SpawnManager : MonoBehaviour
 
     public SpawnElement[][] spawnWaves = new SpawnElement[5][];
 
-	//När det är 50 min innan inläming får man fulkoda. Sådetså
-	public GameObject victoryScreen;
+    //När det är 50 min innan inläming får man fulkoda. Sådetså
+    public GameObject victoryScreen;
 
     public SpawnElement[] wave0;
     public SpawnElement[] wave1;
@@ -21,22 +21,19 @@ public class SpawnManager : MonoBehaviour
     public int currentWave = 0;
     public int currentElement = 0;
     public int currentCount = 0;
-	public int maxTimer;
-	int timer;
 
-    public float timeBetweenWaves;
-    public float firstWaveTimer;
-    public float laterWaveTimer;
+
+
     bool waiting;
     static int enemyCount;
     static int thisWave;
 
     SpawnElement curSe;
 
-    Text timerText;
+
     Text waveText;
 
-	EnemyManager enemyManager;
+    EnemyManager enemyManager;
 
     public GameObject spawnPos;
 
@@ -47,11 +44,11 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
-		timer = maxTimer;
-		enemyManager = GetComponent<EnemyManager>();
-		
+
+        enemyManager = GetComponent<EnemyManager>();
+
         waiting = true;
-        timerText = GameObject.Find("Timer").GetComponent<Text>();
+
         waveText = GameObject.Find("WaveText").GetComponent<Text>();
         enemyCount = 0;
         thisWave = 0;
@@ -65,27 +62,18 @@ public class SpawnManager : MonoBehaviour
         {
             enemyCount += element.count;
         }
-        StartCoroutine("SpawnWait");
+
     }
 
-    IEnumerator SpawnWait()
-    {
-        waiting = true;
-        yield return new WaitForSeconds(firstWaveTimer);
-        waiting = false;
-        StartCoroutine("TimeOut");
-        StartCoroutine("SpawnEnemy");
-    }
+
 
     void Update()
     {
         if (waiting && Input.GetKeyDown(KeyCode.Return))
         {
-            StopCoroutine("SpawnWait");
             StopCoroutine("WaitForWave");
             StartCoroutine("SpawnEnemy");
-			StartCoroutine("TimeOut");
-			waiting = false;
+            waiting = false;
         }
     }
 
@@ -151,7 +139,7 @@ public class SpawnManager : MonoBehaviour
         enemyCount--;
         if (enemyCount <= 0)
         {
-            StopCoroutine("TimeOut");
+
             GameObject[] towers = GameObject.FindGameObjectsWithTag("Tower");
             foreach (GameObject tower in towers)
             {
@@ -162,12 +150,12 @@ public class SpawnManager : MonoBehaviour
             }
             if (currentWave < waves.Length)
                 StartCoroutine("WaitForWave");
-			else
-			{
-				victoryScreen.SetActive(true);
-				Time.timeScale = 0;
-				StopCoroutine("TimeOut");
-			}
+            else
+            {
+                victoryScreen.SetActive(true);
+                Time.timeScale = 0;
+
+            }
         }
     }
 
@@ -178,30 +166,27 @@ public class SpawnManager : MonoBehaviour
 
     IEnumerator WaitForWave()
     {
-		StopCoroutine("TimeOut");
-		timer = maxTimer;
+
         thisWave++;
         foreach (SpawnElement element in waves[thisWave])
         {
             enemyCount += element.count;
-			timer += (int)element.delay * (int)element.count;
+
         }
-        yield return new WaitForSeconds(timeBetweenWaves);
-        StartCoroutine("TimeOut");
+
         waveText.text = "Wave: " + (thisWave + 1).ToString();
         GameObject.Find("WaveSound").GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1f);
-        waiting = false;
-        StartCoroutine("SpawnEnemy");
-    }
+        waiting = true;
 
-    IEnumerator TimeOut()
-    {
-		for (int i = timer; i > 0; i--)
+        if (waiting && Input.GetKeyDown(KeyCode.Return))
         {
-            timerText.text = i.ToString();
-            yield return new WaitForSeconds(1);
+            StopCoroutine("WaitForWave");
+            StartCoroutine("SpawnEnemy");
+            waiting = false;
         }
-        GetComponent<GameOverManager>().TimedOut();
+
+
+
     }
 }

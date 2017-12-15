@@ -56,20 +56,21 @@ public class BuildingManagerScript : MonoBehaviour
 			//...körs en raycast. Som ignorerar vissa lager och träffar resten
 			if (Physics.Raycast(ray, out hit, 1000, layerMask))
 			{
+
 				if (hit.transform.CompareTag("Foundation"))
 				{
 					ClickedOnFoundation(hit.transform);
 
-					if (!clickedFoundationScript.clicked && !clickedFoundationScript.HasScrap)
-					{
-						//Ifall grunden ej är byggd på samt ej klickad på innan körs en koll för att se ifall platsen får byggas på
-						StartCoroutine("CheckPath");
-					}
+                    if (!clickedFoundationScript.clicked && !clickedFoundationScript.HasScrap)
+                    {
+                        //Ifall grunden ej är byggd på samt ej klickad på innan körs en koll för att se ifall platsen får byggas på
+                        StartCoroutine("CheckPath");
+                    }
 
-					else
-					{
-						clickedFoundationScript.ClickedOn(true);
-					}
+                    else
+                    {
+                        clickedFoundationScript.ClickedOn(true);
+                    }
 				}
 
 				else if (hit.transform.CompareTag("ScrapHeap"))
@@ -161,7 +162,7 @@ public class BuildingManagerScript : MonoBehaviour
 					{
 						ClickedOnFoundation(hit.transform);
 
-						if (!clickedFoundationScript.HasScrap)
+						if (!clickedFoundationScript.HasScrap && clickedFoundationScript.valid)
 						{
 							StartCoroutine("CheckPath");
 						}
@@ -182,7 +183,7 @@ public class BuildingManagerScript : MonoBehaviour
 					{
 						ClickedOnFoundation(hit.transform);
 
-						if (!clickedFoundationScript.HasScrap)
+						if (!clickedFoundationScript.HasScrap && clickedFoundationScript.valid)
 						{
 							StartCoroutine("CheckPath");
 						}
@@ -203,7 +204,7 @@ public class BuildingManagerScript : MonoBehaviour
 					{
 						ClickedOnFoundation(hit.transform);
 
-						if (!clickedFoundationScript.HasScrap)
+						if (!clickedFoundationScript.HasScrap && clickedFoundationScript.valid)
 						{
 							StartCoroutine("CheckPath");
 						}
@@ -224,7 +225,7 @@ public class BuildingManagerScript : MonoBehaviour
 					{
 						ClickedOnFoundation(hit.transform);
 
-						if (!clickedFoundationScript.HasScrap)
+						if (!clickedFoundationScript.HasScrap && clickedFoundationScript.valid)
 						{
 							StartCoroutine("CheckPath");
 						}
@@ -257,17 +258,20 @@ public class BuildingManagerScript : MonoBehaviour
 
 	public void BuildScrap()
 	{
-		if (scrapManager.ScrapChange(-scrapHeapCost))
-		{
-			while (scrapIndex == lastScrapIndex)
-			{
-				scrapIndex = Random.Range(0, 4);
-			}
+        if (clickedFoundationScript.valid)
+        {
+            if (scrapManager.ScrapChange(-scrapHeapCost))
+            {
+                while (scrapIndex == lastScrapIndex)
+                {
+                    scrapIndex = Random.Range(0, 4);
+                }
 
-			lastScrapIndex = scrapIndex;
-			clickedFoundationScript.AttachScrap(scrapHeaps[scrapIndex]);
-			clickedFoundationScript.ClickedOn(true);
-		}
+                lastScrapIndex = scrapIndex;
+                clickedFoundationScript.AttachScrap(scrapHeaps[scrapIndex]);
+                clickedFoundationScript.ClickedOn(true);
+            }
+        }
 	}
 
 	public void BuildTower(GameObject tower)
