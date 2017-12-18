@@ -10,13 +10,13 @@ public class ScoreManager : MonoBehaviour {
     public int Score
     {
         get { return score; }
-        set { score += value; }
+        set { score += value; PlayerPrefs.SetInt("Score", score); }
     }
 
 	void Start ()
     {
         text = GameObject.Find("ScoreText").GetComponent<Text>();
-        score = 0;
+        score = PlayerPrefs.GetInt("Score");
 	}
 	
 	void Update ()

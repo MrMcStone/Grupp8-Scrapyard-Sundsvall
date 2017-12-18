@@ -100,7 +100,8 @@ public class MenuManagerScript : MonoBehaviour
 
 	public void Retry()
 	{
-		SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene(currentScene);
+        //SceneManager.LoadScene("GameScene");
 	}
 
 	public void Mute()
