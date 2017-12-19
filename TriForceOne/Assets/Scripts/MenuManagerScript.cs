@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class MenuManagerScript : MonoBehaviour
-{
+{ 
 	public GameObject pauseMenu;
 	public Toggle pauseToggle;
 	public Toggle fwdToggle;
@@ -13,7 +13,8 @@ public class MenuManagerScript : MonoBehaviour
 	bool paused;
 	bool muted;
 	bool speeding;
-
+	bool waiting;
+	 
 	void Start()
 	{
 		speeding = false;
@@ -21,6 +22,7 @@ public class MenuManagerScript : MonoBehaviour
 		currentScene = SceneManager.GetActiveScene().name;
 		paused = false;
 		muted = false;
+
 	}
 
 	void Update()
@@ -60,9 +62,19 @@ public class MenuManagerScript : MonoBehaviour
 		SceneManager.LoadScene("HowToPlay");
 	}
 
+
+
 	public void Quit()
 	{
 		Application.Quit();
+	}
+
+	public void ContinueButton()
+	{
+		if (waiting) 
+		{
+			StartGame ();
+		}
 	}
 
 	public void Pause()

@@ -11,6 +11,7 @@ public class SpawnManager : MonoBehaviour
 
     //När det är 50 min innan inläming får man fulkoda. Sådetså
     public GameObject victoryScreen;
+	public GameObject levelCompleted;
 
     public SpawnElement[] wave0;
     public SpawnElement[] wave1;
@@ -77,6 +78,13 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+	public void SpawnWaveButton(){
+		if (waiting) {
+			StopCoroutine ("WaitForWave");
+			StartCoroutine ("SpawnEnemy");
+			waiting = false;
+		}
+	}
     IEnumerator SpawnEnemy()
     {
         curSe = waves[currentWave][currentElement];
@@ -130,9 +138,16 @@ public class SpawnManager : MonoBehaviour
                 }
             }
         }
-        if (currentWave < waves.Length)
-            StartCoroutine("SpawnEnemy");
+		if (currentWave < waves.Length)
+			StartCoroutine ("SpawnEnemy"); 
+            
     }
+
+	void LevelCompleted()
+	{
+		levelCompleted.SetActive (true);
+		Time.timeScale = 0; 
+	}
 
     public void EnemyDead()
     {
@@ -148,8 +163,13 @@ public class SpawnManager : MonoBehaviour
                     tower.GetComponent<CombatTower>().AmmoRestock();
                 }
             }
-            if (currentWave < waves.Length)
-                StartCoroutine("WaitForWave");
+			if (currentWave < waves.Length) {
+
+				LevelCompleted (); 
+				StartCoroutine("WaitForWave");
+
+			}
+                
             else
             {
                 victoryScreen.SetActive(true);
