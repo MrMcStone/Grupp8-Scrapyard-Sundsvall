@@ -153,7 +153,7 @@ public class SpawnManager : MonoBehaviour
             PlayerPrefs.SetInt("LevelsCompleted", thisLevel);
         }
 		levelCompleted.SetActive (true);
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(1f);
         GetComponent<MenuManagerScript>().paused = true;
         GameObject.Find("FoundationMarker").GetComponent<FoundationMarkerScript>().HideMarker();
         
