@@ -27,6 +27,7 @@ public class ScoreManager : MonoBehaviour {
             score = 0;
             PlayerPrefs.SetInt("Score", 0);
             PlayerPrefs.SetInt("LevelsCompleted", 0);
+            text.text = "Score: " + score;
         }
 
     }

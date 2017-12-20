@@ -5,6 +5,9 @@ using System.Collections.Generic;
 
 public class SpawnManager : MonoBehaviour
 {
+    [SerializeField] int thisLevel;
+
+
     public SpawnElement[][] waves = new SpawnElement[5][];
 
     public SpawnElement[][] spawnWaves = new SpawnElement[5][];
@@ -143,10 +146,18 @@ public class SpawnManager : MonoBehaviour
             
     }
 
-	void LevelCompleted()
+	IEnumerator LevelCompleted()
 	{
+        if(PlayerPrefs.GetInt("LevelsCompleted") < thisLevel)
+        {
+            PlayerPrefs.SetInt("LevelsCompleted", thisLevel);
+        }
 		levelCompleted.SetActive (true);
-		Time.timeScale = 0; 
+        yield return new WaitForSeconds(0.8f);
+        GetComponent<MenuManagerScript>().paused = true;
+        GameObject.Find("FoundationMarker").GetComponent<FoundationMarkerScript>().HideMarker();
+        
+        Time.timeScale = 0; 
 	}
 
     public void EnemyDead()
@@ -165,7 +176,7 @@ public class SpawnManager : MonoBehaviour
             }
 			if (currentWave < waves.Length) {
 
-				LevelCompleted (); 
+				StartCoroutine(LevelCompleted()); 
 				StartCoroutine("WaitForWave");
 
 			}
@@ -205,8 +216,5 @@ public class SpawnManager : MonoBehaviour
             StartCoroutine("SpawnEnemy");
             waiting = false;
         }
-
-
-
     }
 }
