@@ -33,7 +33,7 @@ public class MenuManagerScript : MonoBehaviour
 			{
 				Quit();
 			}
-			else if (currentScene == "GameScene")
+			else if (currentScene != "MainMenu" && currentScene != "HowToPlay" && currentScene != "LevelSelection")
 			{
 				if (GameObject.Find("FoundationMarker").GetComponent<FoundationMarkerScript>().onBoard)
 				{
@@ -46,7 +46,7 @@ public class MenuManagerScript : MonoBehaviour
 				}
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.Tab) && currentScene == "GameScene" && !paused)
+		if (Input.GetKeyDown(KeyCode.Tab) && currentScene != "MainMenu" && currentScene != "HowToPlay" && currentScene != "LevelSelection" && !paused)
 		{
 			fwdToggle.isOn = !fwdToggle.isOn;
 		}
@@ -54,7 +54,7 @@ public class MenuManagerScript : MonoBehaviour
 
 	public void StartGame()
 	{
-		SceneManager.LoadScene("GameScene");
+		SceneManager.LoadScene("LevelSelection");
 	}
 
 	public void HowToPlay()
@@ -113,7 +113,6 @@ public class MenuManagerScript : MonoBehaviour
 	public void Retry()
 	{
         SceneManager.LoadScene(currentScene);
-        //SceneManager.LoadScene("GameScene");
 	}
 
 	public void Mute()
