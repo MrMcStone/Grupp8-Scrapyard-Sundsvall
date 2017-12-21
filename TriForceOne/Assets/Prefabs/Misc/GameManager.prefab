@@ -75,6 +75,7 @@ MonoBehaviour:
   pauseToggle: {fileID: 0}
   fwdToggle: {fileID: 0}
   fwdSpeed: 4
+  paused: 0
 --- !u!114 &114000012989086266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,7 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1d1e35bdf27894b80aa230d605c558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisLevel: 1
   victoryScreen: {fileID: 0}
+  levelCompleted: {fileID: 0}
   wave0:
   - enemy: {fileID: 1000012951204234, guid: 10597c0728e411a4aa8bb79108464abd, type: 2}
     count: 15
@@ -180,10 +183,6 @@ MonoBehaviour:
   currentWave: 0
   currentElement: 0
   currentCount: 0
-  maxTimer: 120
-  timeBetweenWaves: 0
-  firstWaveTimer: 30
-  laterWaveTimer: 0
   spawnPos: {fileID: 0}
   skipToggle: {fileID: 0}
   countdownText: {fileID: 0}
