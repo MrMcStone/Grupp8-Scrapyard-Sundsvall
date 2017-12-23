@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000002, guid: 1786bd0f7f978ee43b7736be0f945d09,
     type: 2}
   m_UseShadowmask: 0
@@ -1652,7 +1653,8 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 103.95701
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95494503311824316, guid: 424ab58b427b1234b87e2165d399bae3, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 424ab58b427b1234b87e2165d399bae3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &102312649 stripped
