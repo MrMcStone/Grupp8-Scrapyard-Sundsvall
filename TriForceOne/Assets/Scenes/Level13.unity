@@ -20806,7 +20806,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b7d6bab1dd4a08247a7361d38deec9e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.057
+      value: 0.261
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b7d6bab1dd4a08247a7361d38deec9e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28974,6 +28974,7 @@ GameObject:
   - component: {fileID: 2107592574}
   - component: {fileID: 2107592573}
   - component: {fileID: 2107592572}
+  - component: {fileID: 2107592575}
   m_Layer: 9
   m_Name: scrap5 (1)
   m_TagString: Untagged
@@ -29037,6 +29038,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: -17.906, y: 90.263, z: 10.684001}
+--- !u!208 &2107592575
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107592571}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.080000006, y: 0.065000005, z: 0.24400002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.065000005, z: 0.018000001}
+  m_TimeToStationary: 0.5
 --- !u!1 &2109100041
 GameObject:
   m_ObjectHideFlags: 0
