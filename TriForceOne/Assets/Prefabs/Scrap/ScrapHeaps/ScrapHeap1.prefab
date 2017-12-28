@@ -427,7 +427,6 @@ GameObject:
   m_Component:
   - component: {fileID: 457948}
   - component: {fileID: 3358766}
-  - component: {fileID: 6545386}
   - component: {fileID: 208000013783784572}
   m_Layer: 9
   m_Name: ScrapHeap1
@@ -2333,18 +2332,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164050}
   m_Mesh: {fileID: 4300000, guid: fed5d7cb6282356478b53c6c88ccfb64, type: 3}
---- !u!65 &6545386
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149504}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.5, z: 1}
-  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
