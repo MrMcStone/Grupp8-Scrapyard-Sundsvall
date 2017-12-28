@@ -130,7 +130,6 @@ public class FoundationMarkerScript : MonoBehaviour
 			}
 		}
 		if(foundation.GetComponent<FoundationScript>().tower.name != "MagnetTower(Clone)")
-		//if(foundation.GetComponent<FoundationScript>().tower.GetComponent<CombatTower>())
 		{
 			projector.orthographicSize = foundation.GetComponent<FoundationScript>().tower.GetComponent<TowerScript>().range / 5;
 		}

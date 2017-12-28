@@ -45,6 +45,8 @@ public class SpawnManager : MonoBehaviour
 
     public Text countdownText;
 
+    public Text enemiesAlive;
+
 
     void Start()
     {
@@ -66,7 +68,6 @@ public class SpawnManager : MonoBehaviour
         {
             enemyCount += element.count;
         }
-
     }
 
 
@@ -78,6 +79,7 @@ public class SpawnManager : MonoBehaviour
             StopCoroutine("WaitForWave");
             StartCoroutine("SpawnEnemy");
             waiting = false;
+            enemiesAlive.text = "Enemies: " + enemyCount.ToString();
         }
     }
 
@@ -86,12 +88,13 @@ public class SpawnManager : MonoBehaviour
 			StopCoroutine ("WaitForWave");
 			StartCoroutine ("SpawnEnemy");
 			waiting = false;
-		}
-	}
+            enemiesAlive.text = "Enemies: " + enemyCount.ToString();
+
+        }
+    }
     IEnumerator SpawnEnemy()
     {
         curSe = waves[currentWave][currentElement];
-
         if (curSe.enemy)
         {
             GameObject g = curSe.enemy as GameObject;
@@ -163,6 +166,7 @@ public class SpawnManager : MonoBehaviour
     public void EnemyDead()
     {
         enemyCount--;
+        enemiesAlive.text = "Enemies: " + enemyCount.ToString();
         if (enemyCount <= 0)
         {
 
@@ -205,7 +209,7 @@ public class SpawnManager : MonoBehaviour
 
         }
 
-        waveText.text = "Wave: " + (thisWave + 1).ToString();
+        waveText.text = "Level: " + thisLevel.ToString();
         GameObject.Find("WaveSound").GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1f);
         waiting = true;

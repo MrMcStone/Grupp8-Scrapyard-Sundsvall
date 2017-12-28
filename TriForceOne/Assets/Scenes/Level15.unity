@@ -18376,12 +18376,12 @@ Prefab:
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 354.5
+      value: 292.5
       objectReference: {fileID: 0}
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 168.5
+      value: 164.5
       objectReference: {fileID: 0}
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
@@ -18828,6 +18828,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1878662713223254, guid: a649e6f7cadf75b4683209b930278ab0,
     type: 2}
   m_PrefabInternal: {fileID: 1387005565}
+--- !u!114 &1387005582 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114996583533370100, guid: a649e6f7cadf75b4683209b930278ab0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1387005565}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1388528004
 GameObject:
   m_ObjectHideFlags: 0
@@ -27393,6 +27399,11 @@ Prefab:
       propertyPath: thisLevel
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: enemiesAlive
+      value: 
+      objectReference: {fileID: 1387005582}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f681e3ba141665d4e95fffcd44aeb3fb, type: 2}
   m_IsPrefabParent: 0
