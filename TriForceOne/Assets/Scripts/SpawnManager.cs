@@ -56,7 +56,7 @@ public class SpawnManager : MonoBehaviour
         waveText = GameObject.Find("WaveText").GetComponent<Text>();
         enemyCount = 0;
         thisWave = 0;
-        waveText.text = "Wave: " + (thisWave + 1).ToString();
+        waveText.text = "Level: " + (thisLevel).ToString();
         waves[0] = wave0;
         waves[1] = wave1;
         waves[2] = wave2;
