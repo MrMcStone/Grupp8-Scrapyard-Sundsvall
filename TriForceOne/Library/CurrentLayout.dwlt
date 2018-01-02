@@ -111,7 +111,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 147
+  controlID: 9
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 10
+  controlID: 139
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -364,14 +364,14 @@ MonoBehaviour:
     width: 672
     height: 430
   m_SceneLighting: 1
-  lastFramingTime: 1185.7845800903665
+  lastFramingTime: 467.73156708926473
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.4358222, y: -2.2735825, z: 6.164846}
+    m_Target: {x: -3.6289062, y: -6.317671, z: 13.651501}
     speed: 2
-    m_Value: {x: -1.4358222, y: -2.2735825, z: 6.164846}
+    m_Value: {x: -3.6289062, y: -6.317671, z: 13.651501}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -394,13 +394,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.37765762, y: 0.015817914, z: -0.0064924737, w: -0.9258279}
+    m_Target: {x: -0.3199904, y: 0.023291022, z: -0.007908695, w: -0.94713897}
     speed: 2
-    m_Value: {x: -0.37765762, y: 0.015817914, z: -0.006492473, w: -0.92582786}
+    m_Value: {x: -0.31997904, y: 0.023290195, z: -0.007908414, w: -0.94710535}
   m_Size:
-    m_Target: 44.425125
+    m_Target: 51.109215
     speed: 2
-    m_Value: 44.425125
+    m_Value: 51.109215
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -440,9 +440,9 @@ MonoBehaviour:
     height: 720
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5e2c0000
+    m_SelectedIDs: 482f0000
     m_LastClickedID: 0
-    m_ExpandedIDs: 26d9fdff9eeafdff2cf1fdffa00ffeff7428fefffe3bfeff7256feff6063feff8076feffa27cfeff9482feffba88feff6c90feff9296fefff29cfeff92a2feffd6b1feff1ec3feff3ad7feff2cddfeffdae2fefffef3feff4607ffff521dffff6230fffffc35ffffee3bffff1442ffff3648ffff3256ffff585cffff7a62fffff071ffff6282ffffb08cffff0c93ffffa6fbffff000000007241000026a700003cae000046df00004e400100a6ed010006410200
+    m_ExpandedIDs: 3c21f9fff42ef9fff83ff9ff6050f9ff2c84f9ff4a9ff9ffb2a5f9ffe0abf9ff80b2f9ffcec4f9ffd2d6f9ff02ecf9ffdafcf9ff760dfaff3c1bfaffb436faff5c4ffaff6267faff606ffaffc081faff6088faffa88ffaff00a1faff5ebffaffb6c6faff76fafaff5e01fbff1612fbffd821fbff0e33fbff3a90fdff96a0fdff0eb2fdff6ac2fdff28e3fdff00eafdff36fdfdffc685feff2094feffa6b2feff8cf4feff4239ffffee40ffff5eb1fffffeb6ffff46c8ffff48ceffffa6d4ffffccdaffff62e1ffffdaf2ffff44fbffff00000000946301001a7d010050b6010050e8010046570200b4e2020046ec02001e00030036a70300b8cd0300
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -461,7 +461,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - Level5
+  - Level15
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -503,19 +503,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/Models/scrap
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Models/scrap
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Sndra\Documents\GitHub\Grupp8-Scrapyard-Sundsvall\TriForceOne
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a0270000
-    m_LastClickedID: 10144
-    m_ExpandedIDs: 000000008a270000a027000096280000462a0000f62b0000702e0000c22e000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 53}
+    m_SelectedIDs: 482f0000
+    m_LastClickedID: 12104
+    m_ExpandedIDs: 00000000aa270000be270000c0270000b6280000642a0000122c00008e2e0000dc2e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -543,7 +543,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008a270000a027000096280000462a0000f62b0000702e0000c22e0000
+    m_ExpandedIDs: 00000000aa270000c0270000b6280000642a0000122c00008e2e0000dc2e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -595,7 +595,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 480}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 179
 --- !u!114 &16
