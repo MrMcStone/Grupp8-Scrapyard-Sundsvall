@@ -2547,12 +2547,12 @@ Prefab:
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 292.5
+      value: 224
       objectReference: {fileID: 0}
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 164.5
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
@@ -10011,7 +10011,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 4, y: 0.5, z: 1.25}
+  m_Extents: {x: 4, y: 0.5, z: 0.75}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -10023,13 +10023,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 810765825}
-  m_LocalRotation: {x: -0, y: -0.7899433, z: -0, w: 0.61318}
-  m_LocalPosition: {x: 5.5345063, y: 0, z: 2.7243633}
+  m_LocalRotation: {x: -0, y: -0.8000353, z: -0, w: 0.599953}
+  m_LocalPosition: {x: 5.54, y: 0, z: 1.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 31621419}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 7.385, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -106.267006, z: 0}
 --- !u!4 &818233353 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4088487335311354, guid: 424ab58b427b1234b87e2165d399bae3,
@@ -16705,7 +16705,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1545442479}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -276.5, y: -118.20001, z: 0}
+  m_LocalPosition: {x: -208, y: -79.70001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 161130243}
@@ -21374,7 +21374,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 7, y: 0.5, z: 2.5}
+  m_Extents: {x: 7, y: 0.5, z: 2}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1

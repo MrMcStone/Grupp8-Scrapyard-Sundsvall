@@ -7532,7 +7532,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 565308474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -276.5, y: -118.20001, z: 0}
+  m_LocalPosition: {x: -208, y: -79.70001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 899028890}
@@ -16550,7 +16550,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 2.5, y: 0.5, z: 1}
+  m_Extents: {x: 2.5, y: 0.5, z: 0.75}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -16563,7 +16563,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1256782259}
   m_LocalRotation: {x: -0, y: 0.5984633, z: -0, w: 0.8011503}
-  m_LocalPosition: {x: -12.260548, y: 0, z: -6.6169934}
+  m_LocalPosition: {x: -11.96, y: 0, z: -6.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 756709816}
@@ -22377,13 +22377,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1686342701}
-  m_LocalRotation: {x: -0, y: 0.32458583, z: -0, w: 0.94585633}
-  m_LocalPosition: {x: -7.731822, y: 0, z: -11.089214}
+  m_LocalRotation: {x: -0, y: 0.22885548, z: -0, w: 0.9734605}
+  m_LocalPosition: {x: -7.731827, y: 0, z: -11.08922}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 756709816}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: -17.169, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 26.459002, z: 0}
 --- !u!1 &1710507530
 GameObject:
   m_ObjectHideFlags: 0
@@ -24368,12 +24368,12 @@ Prefab:
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 292.5
+      value: 224
       objectReference: {fileID: 0}
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 164.5
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
