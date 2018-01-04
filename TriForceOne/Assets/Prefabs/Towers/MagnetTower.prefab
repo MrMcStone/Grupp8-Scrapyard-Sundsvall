@@ -1921,9 +1921,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sellValue: 140
   scrapCost: 200
-  range: 30
+  range: 40
   currentUpgrades: 000000000000000000000000
-  strength: 15
+  strength: 20
   effects:
   - {fileID: 1000012068735804}
   - {fileID: 1000013755170324}
