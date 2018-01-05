@@ -4246,12 +4246,12 @@ Prefab:
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 224
+      value: 354
       objectReference: {fileID: 0}
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 126
+      value: 199
       objectReference: {fileID: 0}
     - target: {fileID: 224792004960355762, guid: a649e6f7cadf75b4683209b930278ab0,
         type: 2}
@@ -6366,6 +6366,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012486135816, guid: f681e3ba141665d4e95fffcd44aeb3fb, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6473,6 +6478,74 @@ Prefab:
       propertyPath: enemiesAlive
       value: 
       objectReference: {fileID: 534321802}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[1].enemy
+      value: 
+      objectReference: {fileID: 1000013592872356, guid: 79875ef1d682e1f4fb2bb6bdedfd1765,
+        type: 2}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[1].count
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[1].delay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[2].enemy
+      value: 
+      objectReference: {fileID: 1000013420782776, guid: dc93be4d06d88a146a319064add26a2d,
+        type: 2}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[2].count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[2].delay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[2].health
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[0].enemy
+      value: 
+      objectReference: {fileID: 1000013420782776, guid: dc93be4d06d88a146a319064add26a2d,
+        type: 2}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[0].health
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[0].count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[0].delay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013102160736, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: missileTowerAvailable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012989086266, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: startingScrap
+      value: 1500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f681e3ba141665d4e95fffcd44aeb3fb, type: 2}
   m_IsPrefabParent: 0
@@ -12459,7 +12532,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534321799}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -208, y: -79.70001, z: 0}
+  m_LocalPosition: {x: -338, y: -152.70001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 215852792}
