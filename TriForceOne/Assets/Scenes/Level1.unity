@@ -5655,12 +5655,6 @@ Prefab:
       propertyPath: wave0.Array.data[1].health
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
-        type: 2}
-      propertyPath: wave0.Array.data[0].enemy
-      value: 
-      objectReference: {fileID: 1000012951204234, guid: 10597c0728e411a4aa8bb79108464abd,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f681e3ba141665d4e95fffcd44aeb3fb, type: 2}
   m_IsPrefabParent: 0
