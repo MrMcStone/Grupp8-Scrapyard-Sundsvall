@@ -5814,12 +5814,27 @@ Prefab:
     - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
         type: 2}
       propertyPath: wave0.Array.data[2].health
-      value: 300
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
         type: 2}
       propertyPath: wave0.Array.data[1].health
-      value: 60
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[0].health
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010368844082, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: maxLives
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012989086266, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: startingScrap
+      value: 900
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f681e3ba141665d4e95fffcd44aeb3fb, type: 2}
