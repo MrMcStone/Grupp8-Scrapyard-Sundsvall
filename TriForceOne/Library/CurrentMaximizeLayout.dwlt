@@ -22,10 +22,10 @@ MonoBehaviour:
     y: 30
     width: 1353
     height: 707
-  m_MinSize: {x: 917, y: 442}
-  m_MaxSize: {x: 22012, y: 10021}
+  m_MinSize: {x: 911, y: 442}
+  m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 6577
+  controlID: 16371
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 6578
+  controlID: 16372
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,9 +183,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.7585895, y: -15.887575, z: 14.042422}
+    m_Target: {x: 0.96229696, y: -18.144323, z: 9.403848}
     speed: 2
-    m_Value: {x: -2.7585895, y: -15.887575, z: 14.042422}
+    m_Value: {x: 0.96229696, y: -18.144323, z: 9.403848}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -212,9 +212,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.5405899, y: 0.0383096, z: -0.024701461, w: -0.84005046}
   m_Size:
-    m_Target: 38.070793
+    m_Target: 31.334791
     speed: 2
-    m_Value: 38.070793
+    m_Value: 31.334791
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 204
     height: 707
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -304,9 +304,9 @@ MonoBehaviour:
     height: 686
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 12740200
-    m_LastClickedID: 160786
-    m_ExpandedIDs: 6876f8ff9acdf8ffd409faffa621faffb431faffd0e7faffacfafaff6062fcffc66dfcfffed9fcff620dfdff4eaafdff0819feff1c39feffe857feffbc72feffa6fbffff0000000026100200
+    m_SelectedIDs: b02e0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 2cd2efffe0dbf0fff2e7f3ff804df7ff6876f8ff9acdf8ffd409faffa621faffb431faffd0e7faffacfafaff6062fcffc66dfcfffed9fcff620dfdff4eaafdff0819feff1c39feffe857feffbc72feffa6fbffff0000000026100200b6db0200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\vikin\OneDrive\Dokument\GitHub\projekthantering\Grupp8-Scrapyard-Sundsvall\TriForceOne
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 167}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 9e270000
     m_LastClickedID: 10142
     m_ExpandedIDs: 00000000882700009c2700009e27000098280000482a0000fc2b0000802e0000d42e000000ca9a3bffffff7f
@@ -420,7 +420,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 9}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -457,8 +457,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 12740200
-    m_LastClickedInstanceID: 160786
+    m_SelectedInstanceIDs: b02e0000
+    m_LastClickedInstanceID: 11952
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -484,7 +484,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 900}
+    m_ScrollPosition: {x: 0, y: 1380}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 188
 --- !u!114 &11
@@ -505,8 +505,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 707
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
