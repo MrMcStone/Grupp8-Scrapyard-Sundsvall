@@ -14863,17 +14863,52 @@ Prefab:
         type: 2}
       propertyPath: wave0.Array.data[0].enemy
       value: 
-      objectReference: {fileID: 1000011243194530, guid: 7fc01e1d0a97b74409b7f9afffbf6a5d,
+      objectReference: {fileID: 1000012951204234, guid: 10597c0728e411a4aa8bb79108464abd,
         type: 2}
     - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
         type: 2}
       propertyPath: wave0.Array.data[0].health
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
         type: 2}
       propertyPath: wave0.Array.data[0].delay
-      value: 0.5
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[1].delay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[2].count
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[1].health
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[2].health
+      value: 520
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012989086266, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: startingScrap
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013068044966, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: wave0.Array.data[0].count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010368844082, guid: f681e3ba141665d4e95fffcd44aeb3fb,
+        type: 2}
+      propertyPath: maxLives
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f681e3ba141665d4e95fffcd44aeb3fb, type: 2}
