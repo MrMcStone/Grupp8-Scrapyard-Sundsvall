@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 909, y: 421}
   m_MaxSize: {x: 22004, y: 10000}
   vertical: 0
-  controlID: 7552
+  controlID: 7735
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 7553
+  controlID: 7736
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -304,23 +304,23 @@ MonoBehaviour:
     height: 687
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 84280000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 7c95f8fff4e0faffea3efbff58a0fbff7ea6fbff240ffcffa216fcff3657fcff4669fcff2492fcff2698fcffc09dfcffd8a2fcffb011ffffd421ffff1a41ffff48bbffffa8f1ffff98fbffff00000000
+    m_SelectedIDs: a017f8ff
+    m_LastClickedID: -518240
+    m_ExpandedIDs: a017f8ff1439f8ff383ff8ff7c95f8fff4e0faffea3efbff58a0fbff7ea6fbff240ffcffa216fcff3657fcff4669fcff2492fcff2698fcffc09dfcffd8a2fcffb011ffffd421ffff1a41ffff48bbffffa8f1ffff98fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: GameManager
+      m_OriginalName: GameManager
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 279418
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
@@ -457,8 +457,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 84280000
-    m_LastClickedInstanceID: 10372
+    m_SelectedInstanceIDs: a017f8ff
+    m_LastClickedInstanceID: -518240
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -484,7 +484,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 660}
+    m_ScrollPosition: {x: 0, y: 180}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 188
 --- !u!114 &11
