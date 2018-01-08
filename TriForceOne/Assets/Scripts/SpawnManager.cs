@@ -151,6 +151,7 @@ public class SpawnManager : MonoBehaviour
 
 	IEnumerator LevelCompleted()
 	{
+        yield return new WaitForSeconds(0.1f);
         if(PlayerPrefs.GetInt("LevelsCompleted") < thisLevel)
         {
             PlayerPrefs.SetInt("LevelsCompleted", thisLevel);

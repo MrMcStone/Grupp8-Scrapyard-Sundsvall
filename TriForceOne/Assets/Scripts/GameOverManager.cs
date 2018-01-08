@@ -44,7 +44,7 @@ public class GameOverManager : MonoBehaviour
         }
         if (restartEnabled && Input.GetKeyDown("r"))
         {
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

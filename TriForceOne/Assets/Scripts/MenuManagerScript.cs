@@ -9,7 +9,7 @@ public class MenuManagerScript : MonoBehaviour
 	public Toggle pauseToggle;
 	public Toggle fwdToggle;
 	public int fwdSpeed;
-	string currentScene;
+	public string currentScene;
 	public bool paused;
 	bool muted;
 	bool speeding;
