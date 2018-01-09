@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 138
+  controlID: 6705
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -69,8 +69,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
-    m_VSlider: 1
+    m_HSlider: 0
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
@@ -82,18 +82,18 @@ MonoBehaviour:
       y: 17
       width: 598
       height: 307
-    m_Scale: {x: 1.1940521, y: 1.1940521}
-    m_Translation: {x: 275.60635, y: 165.93596}
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 299, y: 153.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -230.81602
-      y: -138.96878
-      width: 500.81567
-      height: 257.1077
+      x: -299
+      y: -153.5
+      width: 598
+      height: 307
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 139
+  controlID: 6561
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,9 +183,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.35911703, y: -19.86718, z: 21.89148}
+    m_Target: {x: 0.021167591, y: -27.833454, z: 7.8024797}
     speed: 2
-    m_Value: {x: -0.35911703, y: -19.86718, z: 21.89148}
+    m_Value: {x: 0.021167591, y: -27.833454, z: 7.8024797}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -208,13 +208,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.34407577, y: -0.016339043, z: 0.005988413, w: -0.9387806}
+    m_Target: {x: -0.5411538, y: 0.0017635862, z: -0.001134985, w: -0.84092116}
     speed: 2
-    m_Value: {x: -0.34407577, y: -0.016339043, z: 0.005988413, w: -0.9387806}
+    m_Value: {x: -0.54115385, y: 0.0017635862, z: -0.001134985, w: -0.8409212}
   m_Size:
-    m_Target: 50.337696
+    m_Target: 87.5176
     speed: 2
-    m_Value: 50.337696
+    m_Value: 87.5176
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 217
     height: 708
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -304,23 +304,23 @@ MonoBehaviour:
     height: 687
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 74310000
-    m_LastClickedID: 12660
-    m_ExpandedIDs: a6fbffff00000000
+    m_SelectedIDs: 28290000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 8274fbffc469fdffa075fdffac76fdff7483fdff8283fdff4292fdff4c9efdff3cadfdff36bcfdff6acbfdff26cffdff3ad3fdff82d7fdffd0dbfdff72ebfdff98fbfdffba0afeff8226feffb631feffbc31fefffa3cfeff3e63feff726efeff786efeff507bfeff8e86feff38d7feffa6fbffff00000000b0320000de450200
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Map
-      m_OriginalName: Map
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 12660
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\vikin\OneDrive\Dokument\GitHub\projekthantering\Grupp8-Scrapyard-Sundsvall\TriForceOne
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 120}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 9e270000
     m_LastClickedID: 10142
     m_ExpandedIDs: 00000000882700009c2700009e27000098280000482a0000fc2b0000802e0000d42e000000ca9a3bffffff7f
@@ -432,7 +432,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000882700009c2700009e27000098280000482a0000fc2b0000802e0000d42e0000
+    m_ExpandedIDs: 00000000882700009c2700009e27000098280000482a0000fc2b0000802e0000d42e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -457,9 +457,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 74310000
-    m_LastClickedInstanceID: 12660
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 28290000
+    m_LastClickedInstanceID: 10536
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -484,7 +484,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 540}
+    m_ScrollPosition: {x: 0, y: 120}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 110
 --- !u!114 &11
@@ -510,8 +510,9 @@ MonoBehaviour:
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
+  - {fileID: 13}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -545,3 +546,29 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12141, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 0
+  m_MinSize: {x: 300, y: 360}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Navigation
+    m_Image: {fileID: 7874161543223113035, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_DepthBufferBits: 0
+  m_Pos:
+    serializedVersion: 2
+    x: 1186
+    y: 107
+    width: 275
+    height: 687
